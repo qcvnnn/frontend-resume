@@ -1,11 +1,17 @@
 @import "inputs.css";
 @import "titles.css";
 @import "animation.css";
-
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 #content {
@@ -49,7 +55,7 @@
   border-radius: 12px;
   font-size: xx-large;
 }
-#reset{
+#reset {
   width: 275px;
   height: 80px;
   background-color: rgb(122, 100, 186);
@@ -60,7 +66,7 @@
   border-radius: 12px;
   font-size: xx-large;
 }
-.main-footer{
+.main-footer {
   margin-left: 20px;
   width: 555px;
   height: 80px;
