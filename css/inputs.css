@@ -1,0 +1,76 @@
+.text-input {
+  box-sizing: border-box;
+  width: auto;
+  background-color: #f0f0f0;
+  border: thin solid transparent;
+  border-radius: 12px;
+  padding: 12px;
+
+  &.name-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 124px;
+    height: 124px;
+  }
+
+  &.image-box {
+    display: flex;
+    justify-content: space-between;
+    width: 124px;
+    height: 124px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  &.language-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 267px;
+    height: 124px;
+  }
+
+  &.experience-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    width: 411px;
+    height: 359px;
+    padding: 12px;
+  }
+
+  &.tools-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 124px;
+    height: 359px;
+    padding-bottom: 0;
+  }
+
+  &.education-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 267px;
+    height: 289px;
+  }
+
+  &.interests-box {
+    display: flex;
+    width: 267px;
+    height: 177px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 267px;
+    height: 92px;
+    background-color: black;
+  }
+}

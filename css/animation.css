@@ -1,0 +1,169 @@
+.title.name:hover,
+.title.role:hover,
+.title.your-language-first:hover,
+.title.your-language-second:hover,
+.title.your-language-thrid:hover,
+.title.greeting-phrase:hover,
+.title.language:hover,
+.title.experience:hover,
+.experience-date.last-job:hover,
+.role-name.last-job:hover,
+.company-name.last-job:hover,
+.job-time.last-job:hover,
+.experience-date.second:hover,
+.experience-date.thrid:hover,
+.role-name.second:hover,
+.role-name.thrid:hover,
+.company-name.second-job:hover,
+.company-name.thrid-job:hover,
+.job-time.thrid-job:hover,
+.title.education:hover,
+.edu-header.last:hover,
+.edu-header.second:hover,
+.edu-name.last:hover,
+.edu-footer.last:hover,
+.edu-name.second:hover,
+.edu-footer.second:hover,
+.edu-header.first:hover,
+.edu-name.first:hover,
+.edu-footer.first:hover,
+.title.interest:hover,
+.title.contact-phrase:hover,
+.title.mail:hover,
+.interest-item:hover,
+.edu-items span:hover,
+.feature-point ul li:hover {
+  transform: translateY(-1.5px);
+  transition: all 0.2s ease;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+}
+
+.title.name.editing,
+.title.role.editing,
+.title.your-language-first.editing,
+.title.your-language-second.editing,
+.title.your-language-thrid.editing,
+.title.greeting-phrase.editing,
+.title.language.editing,
+.title.experience.editing,
+.experience-date.last-job.editing,
+.role-name.last-job.editing,
+.company-name.last-job.editing,
+.job-time.last-job.editing,
+.experience-date.second.editing,
+.experience-date.thrid.editing,
+.role-name.second.editing,
+.role-name.thrid.editing,
+.company-name.second-job.editing,
+.company-name.thrid-job.editing,
+.job-time.thrid-job.editing,
+.title.education.editing,
+.edu-header.last.editing,
+.edu-header.second.editing,
+.edu-name.last.editing,
+.edu-footer.last.editing,
+.edu-name.second.editing,
+.edu-footer.second.editing,
+.edu-header.first.editing,
+.edu-name.first.editing,
+.edu-footer.first.editing,
+.title.interest.editing,
+.title.contact-phrase.editing,
+.title.mail.editing,
+.interest-item.editing,
+.edu-items span.editing,
+.feature-point ul li.editing {
+  animation: pulse 0.5s ease;
+  background-color: rgba(40, 217, 121, 0.1);
+  border-radius: 4px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.title.name input,
+.title.role input,
+.title.your-language-first input,
+.title.your-language-second input,
+.title.your-language-thrid input,
+.title.greeting-phrase input,
+.title.language input,
+.title.experience input,
+.experience-date.last-job input,
+.role-name.last-job input,
+.company-name.last-job input,
+.job-time.last-job input,
+.experience-date.second input,
+.experience-date.thrid input,
+.role-name.second input,
+.role-name.thrid input,
+.company-name.second-job input,
+.company-name.thrid-job input,
+.job-time.thrid-job input,
+.title.education input,
+.edu-header.last input,
+.edu-header.second input,
+.edu-name.last input,
+.edu-footer.last input,
+.edu-name.second input,
+.edu-footer.second input,
+.edu-header.first input,
+.edu-name.first input,
+.edu-footer.first input,
+.title.interest input,
+.title.contact-phrase input,
+.title.mail input,
+.interest-item input,
+.edu-items span input,
+.feature-point ul li textarea {
+  animation: slideIn 0.3s ease-out;
+  box-shadow: 0 0 0 2px #28d979;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title.name.saved-effect,
+.title.role.saved-effect,
+.feature-point ul li.saved-effect {
+  animation: savedFlash 1s;
+}
+
+#cmd:hover{
+  border-color: rgb(58, 135, 156);
+  background-color: rgb(122, 178, 194);
+}
+#reset:hover{
+  background-color: rgb(151, 134, 200);
+  border-color: rgb(74, 55, 122);;
+}
+
+@keyframes savedFlash {
+  0% {
+    background-color: rgba(40, 217, 121, 0.3);
+  }
+  100% {
+    background-color: transparent;
+  }
+}

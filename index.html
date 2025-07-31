@@ -1,13 +1,292 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Итоговый проект</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <div id="content">
+      <div class="main-container">
+        <header class="info-header">
+          <div class="text-input image-box">
+            <img
+              src="photos/profileImg.svg"
+              alt="profile-image"
+              width="124"
+              height="124"
+            />
+          </div>
+          <div class="text-input name-box">
+            <div class="title greeting-phrase">Hello 👋🏻 I'm</div>
+            <div class="title your-info">
+              <div class="title name">Karthik SR</div>
+              <div class="title role">UX/UI Designer</div>
+            </div>
+          </div>
+          <div class="text-input language-box">
+            <div class="title language">Languages</div>
+            <div class="title list-languages">
+              <div class="title name-language">
+                <div class="title your-language-first">English</div>
+                <div class="title your-language-second">Malayalam</div>
+                <div class="title your-language-thrid">Handi</div>
+              </div>
+              <div class="title level-language">
+                <div class="title your-level-language-first"></div>
+                <div class="title your-level-language-first"></div>
+                <div class="title your-level-language-thrid"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="info-main">
+          <div class="text-input experience-box">
+            <h2 class="title experience">Experience</h2>
+            <div class="title experience-list">
+              <div class="title experience-item last-job">
+                <div class="experience-date-box">
+                  <div class="experience-date last-job">
+                    Jun. 2023 - Present
+                  </div>
+                  <div class="experience-tag">most recent</div>
+                </div>
+                <div class="experience-content last-job">
+                  <div class="job-info">
+                    <div class="role-name last-job">Marketing Manager</div>
+                    <div class="about-job last-job">
+                      <div class="company-name last-job">Pankayam</div>
+                      <div class="sep last-job">|</div>
+                      <div class="job-time last-job">Full-time</div>
+                    </div>
+                  </div>
+                  <div class="feature-point">
+                    <ul class="last-job">
+                      <li>
+                        Strategy development and planning of campaigns that
+                        promote the business and generate genuine traffic
+                      </li>
+                      <li>
+                        SEO Content Creation for Blogs, Website, Social media
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="title experience-item job-second">
+                <div class="experience-date-box">
+                  <div class="experience-date second">2017 - Present</div>
+                </div>
+                <div class="experience-content job-second">
+                  <div class="job-info">
+                    <div class="role-name second">Graphic / Web designer</div>
+                    <div class="about-job">
+                      <div class="company-name second-job">Freelance</div>
+                    </div>
+                  </div>
+                  <div class="feature-point">
+                    <ul>
+                      <li>
+                        Development of internal projects from scratch, product
+                        design of brands
+                      </li>
+                      <li>Landing page, webapps and hybrid apps</li>
+                      <li>
+                        Coordinating with outside agencies, art services, web
+                        designer, marketing, printers, and colleagues as
+                        necessary.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="title experience-item job-thrid">
+                <div class="experience-date-box">
+                  <div class="experience-date thrid">Sep. 2021 - Jun. 2023</div>
+                </div>
+                <div class="experience-content job-thrid">
+                  <div class="job-info">
+                    <div class="role-name thrid">Legal Assistant</div>
+                    <div class="about-job">
+                      <div class="company-name thrid-job">Law Firm</div>
+                      <div class="sep">|</div>
+                      <div class="job-time thrid-job">Intern</div>
+                    </div>
+                  </div>
+                  <div class="feature-point">
+                    <ul>
+                      <li>
+                        Provide administrative support to lawyer and enhance
+                        office effectiveness
+                      </li>
+                      <li>Handle communication with clients, witnesses etc.</li>
+                      <li>
+                        repare case briefs and summarize depositions,
+                        interrogatories and testimony
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-input tools-box">
+            <h2 class="title tools">Tools</h2>
+            <div class="tools-frame">
+              <div class="header-tools">
+                <div class="tool-tag header-tool">design</div>
+                <div class="header-content-tools">
+                  <div class="tool-item">
+                    <img src="photos/logoFigma.svg" alt="Figma logo" />
+                  </div>
+                  <div class="tool-item">
+                    <img
+                      src="photos/adobe-photoshop.svg"
+                      alt="Photoshop logo"
+                    />
+                  </div>
+                  <div class="tool-item">
+                    <img
+                      src="photos/adobe-illustrator.svg"
+                      alt="Illustrator logo"
+                    />
+                  </div>
+                  <div class="tool-item">
+                    <img src="photos/adobe-premiere.svg" alt="Premiere logo" />
+                  </div>
+                  <div class="tool-item">
+                    <img src="photos/logoNotion.svg" alt="Notion logo" />
+                  </div>
+                  <div class="tool-item">
+                    <img src="photos/logoMeet.svg" alt="Meet logo" />
+                  </div>
+                </div>
+              </div>
+              <div class="main-tools">
+                <div class="tool-tag main-tool">no-code</div>
+                <div class="main-content-tools">
+                  <div class="tool-item">
+                    <img src="photos/logoZapier.svg" alt="Zapier logo" />
+                  </div>
+                  <div class="tool-item">
+                    <img src="photos/logoWebflow.svg" alt="Webflow logo" />
+                  </div>
+                  <div class="tool-item">
+                    <img src="photos/logoFramer.svg" alt="Framer logo" />
+                  </div>
+                  <div class="tool-item">
+                    <img src="photos/logoWordpress.svg" alt="Wordpress logo" />
+                  </div>
+                </div>
+              </div>
+              <div class="footer-tools">
+                <div class="tool-tag footer-tool">artificial intelligence</div>
+                <div class="footer-content-tools">
+                  <div class="tool-item">
+                    <img src="photos/logoChatGPT.svg" alt="ChatGPT logo" />
+                  </div>
+                  <div class="tool-item">
+                    <img src="photos/logoCopilot.svg" alt="Copilot logo" />
+                  </div>
+                  <div class="tool-item">
+                    <img
+                      src="photos/logoMidjourney.svg"
+                      alt="Midjourney logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="info-footer">
+          <div class="text-input education-box">
+            <h2 class="title education">Education</h2>
+            <div class="title education-content">
+              <div class="title edeucation-content-left">
+                <div class="education-info last">
+                  <div class="edu-header last">2023</div>
+                  <div class="edu-main last">
+                    <div class="edu-name last">UI/UX</div>
+                    <div class="edu-items last">
+                      <span>#UX</span>
+                      <span>#UI</span>
+                      <span>#research</span>
+                      <span>#DesignSystem</span>
+                      <span>#Ui</span>
+                      <span>#wireframing</span>
+                      <span>#figma</span>
+                      <span>#Ux</span>
+                    </div>
+                  </div>
+                  <div class="edu-footer last">Coursera</div>
+                </div>
+                <div class="education-info second">
+                  <div class="edu-header second">2017</div>
+                  <div class="edu-main second">
+                    <div class="edu-name second">Graphic design</div>
+                    <div class="edu-items">
+                      <span>#branding</span>
+                      <span>#web</span>
+                      <span>#illustration</span>
+                      <span>#adobe</span>
+                    </div>
+                  </div>
+                  <div class="edu-footer second">Coursrea</div>
+                </div>
+              </div>
+              <div class="title education-content-right">
+                <div class="education-info first">
+                  <div class="edu-header first">2017 - 2022</div>
+                  <div class="edu-main first">
+                    <div class="edu-name first">Law</div>
+                    <div class="edu-items">
+                      <span>#law</span>
+                      <span>#legalStudies</span>
+                      <span>#contracts</span>
+                      <span>#internationalLaws</span>
+                    </div>
+                  </div>
+                  <div class="edu-footer first">University of Kerala</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-footer-extra-box">
+            <div class="text-input interests-box">
+              <h2 class="title interest">Interests</h2>
+              <div class="title interests-content">
+                <div class="interest-item">branding</div>
+                <div class="interest-item">design</div>
+                <div class="interest-item">photography</div>
+                <div class="interest-item">artificial intelligence</div>
+                <div class="interest-item">illustration</div>
+                <div class="interest-item">typography</div>
+                <div class="interest-item">social networks</div>
+                <div class="interest-item">research</div>
+                <div class="interest-item">dron pilot</div>
+                <div class="interest-item">games</div>
+              </div>
+            </div>
+            <div class="text-input contact">
+              <div class="title contact-phrase">
+                Let's chat! I'm ready to work on exciting projects
+              </div>
+              <div class="title mail">srkarthik.designscape@gmail.com</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <footer class="main-footer">
+        <button id="cmd">Generate PDF</button>
+        <button id="reset">Reset text</button>
+      </footer>
+    </div>
+    <script src="js/pdfDownloader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/resetText.js"></script>
   </body>
 </html>
